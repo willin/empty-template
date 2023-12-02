@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "name": "empty-template",
+  "version": "0.0.0",
+  "description": "A Template by Willin.Wang",
+  "author": "Willin Wang <willin@willin.org> (https://willin.wang/)",
+  "keywords": [],
+  "homepage": "https://github.com/willin/empty-template#readme",
+  "license": "Apache-2.0",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@willin/eslint-config": "latest",
+    "conventional-changelog-cli": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willin/empty-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/willin/empty-template/issues"
+  },
+  "lint-staged": {
+    "*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx|vue)": [
+      "prettier --write"
+    ],
+    "*.+(js|jsx|ts|tsx|vue)": [
+      "eslint --fix"
+    ]
+  }
+}
